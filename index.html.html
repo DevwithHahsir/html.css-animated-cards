@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            float: left;
+            justify-content: space-around;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(221, 118, 34);
+
+        }
+
+        .card {
+            position: relative;
+            align-self: center;
+            width: 300px;
+            height: 200px;
+            box-shadow: 0px 10px 10px;
+            transition: 0.3s;
+            padding: 30px 50px;
+            background-color: rgb(76, 126, 155);
+            border-radius: 10px;
+            cursor: pointer;
+            margin-right: 30px;
+            left: 30%;
+        }
+
+        .card:hover {
+            height: 320px;
+        }
+
+        .img {
+            position: relative;
+            width: 100%;
+
+            transform: translateY(-120px);
+            box-shadow: 10px;
+
+        }
+
+        img {
+            width: 100%;
+
+            border-radius: 10px;
+
+
+
+
+        }
+
+        .content {
+
+
+            padding: 10px 20px;
+            text-align: center;
+            transform: translateY(-450px);
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+
+        .card:hover .content {
+            opacity: 1;
+            transform: translateY(-120px);
+        }
+
+        .card2 {
+            position: relative;
+            align-self: center;
+            width: 15rem;
+            height: 5rem;
+            
+            box-shadow: 0px 10px 10px;
+            transition: 0.3s;
+
+            cursor: pointer;
+            background-color: rgb(238, 191, 236);
+            border-radius: 10px;
+            left: 40%;
+        }
+
+        .img2 {
+
+            position: relative;
+            width: 100%;
+            transform: translateY(-120px);
+            box-shadow: 10px;
+            object-fit: cover;
+            object-position:center ;
+        }
+
+        .imgg2 {
+            box-shadow: 0px 10px 10px;
+            width: 100%;
+
+        }
+
+        .card2:hover {
+            height:  auto;
+        }
+
+        .content2 {
+            transition: 0.5s;
+            opacity: 0;
+            transform: translateY(-450px);
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .card2:hover .content2 {
+            opacity: 1;
+            transform: translateY(-120px);
+            color: rgb(245, 79, 79);
+
+        }
+        .animated-cards
+        {
+            
+            width: max-content;
+            height: max-content;
+           margin: 3rem;
+            position: absolute;
+           left: 40%;
+           font-size: larger;
+           font-weight: 700;
+           font-family: cursive;
+           color: rgb(212, 210, 210);
+           
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="animated-cards">
+        <p class="an-cards">
+            Css Animated Cards
+        </p>
+    </div>
+
+    <div class="card">
+        <div class="img"> <img src="burj.jpg" alt="" width="200"></div>
+        <div class="content">
+            <h2>Burj-UL-ARAB</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi perferendis reiciendis molestias qui
+                eveniet omnis corrupti veniam beatae rerum maiores minima accusantium, expedita nam repellendus tempora
+                eligendi nostrum. Repudiandae, at.</p>
+        </div>
+    </div>
+    <div class="card2">
+        <div class="img2"> <img class="imgg2" src="khalifa.jpg" alt=""></div>
+        <div class="content2">
+            <h2>BURJ -UL- KHALIFA</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloremque voluptas provident
+                exercitationem quo, eos sapiente excepturi. Rerum veritatis, repudiandae quod eligendi quasi optio
+                blanditiis atque eveniet tempora tempore animi? Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Soluta culpa maxime, repellendus magnam, facere, aut dolor ratione voluptatem facilis dolores
+                aperiam eum. Eius, fugit! Dignissimos accusantium aperiam fugiat laboriosam rerum.</P>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
